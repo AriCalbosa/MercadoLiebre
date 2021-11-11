@@ -67,15 +67,36 @@ h3 {
     width: 100%;
     height: 100%;
     max-height: 55px;
-    border-radius: 4px;
+    border-radius: 6px;
+    border-left: 5px;
+    position: relative;
+}
+
+.buscador input {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
     padding-left: 5px;
 }
 
-.lupa {
-    color: #666;
+/* .buscador i {
+    position: absolute;
     background-color: white;
-    border-radius: 4px;
-    margin: -16px;
+    right: 2px;
+} */
+
+.lupa {
+    position: absolute;
+    background-color: white;
+    border: none;
+    right: 2px;
+}
+
+.lupa button {
+    color: #666;
+    background: 0 0;
+    border: none;
+    
 }
 
 .tarjeta {
@@ -226,9 +247,44 @@ footer i {
 
 
 
-.registrarse div input{
+
+main>h3 {
+    color: black;
+}
+
+main form div h4 {
+    margin-top: 15px;
+}
+
+
+.registrarse, .ingresar {
+    margin: 30px 0px;
+}
+
+.registrarse input, .ingresar input {
+    width: 80%;
+    border-radius: 6px;
+    padding: 5px;
+}
+
+.perfil input, .categorias input {
+    width: auto;
+}
+
+.ingresar button {
+    width: 80%;
+    border-radius: 6px;
+    padding: 5px;
+    margin-top: 15px;
+    background-color: #1259c3;
+    color: white;
+}
+
+.registrarse div input, .ingresar div input{
     margin: 15px 0px;
 }
+
+
 
 
 
@@ -275,7 +331,7 @@ footer i {
     }
     .buscador {
         width: 100%;
-        height: 55px;
+        height: 30px;
     }
     .tarjeta {
         max-width: 235px;
@@ -303,7 +359,7 @@ footer i {
         justify-content: flex-end;
     }
     .listas li {
-        margin: 0 5px;
+        margin: 0 8px;
         /* width: 106px; */
     }
     article {

@@ -14,10 +14,16 @@
     <header class="cabecera">
         <div class="cabecera-principal">
             <img class="logo" src="images/logo-mercado-liebre.svg" alt= "Logo de MercadoLiebre">
-            <div class="formulario" action="#" method="GET">
-                <div class="buscador">Buscar productos, marcas<i class="fas fa-search"></i></div>
+            <form class="formulario" action="#" method="GET" >
+                    <div class="buscador">
+                    <input type="text" placeholder="Buscar productos, marcas y más">
+                    <div class="lupa">
+                        <!-- <a href="#"><i class="fas fa-search"></i></a> -->
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </div>
+                    </div>
                 <!-- <div class="lupa"><i class="fas fa-search"></i></div> -->
-            </div>
+            </form>
             <h2 class="tarjeta"><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</h2>
         </div>
 
@@ -42,14 +48,15 @@
         
     </header>
     <main>
+        <h3>Ingresá a tu cuenta</h3>
         <form action="/" method="POST" class="ingresar">
             <div>
-                <label for="usuario">Nombre de usuario</label>
-                <input type="text" name="usuario">
+                <!-- <label for="usuario">Nombre de usuario</label> -->
+                <input type="text" name="usuario" placeholder="Nombre de usuario">
             </div>
             <div>
-                <label for="contraseña">Contraseña</label>
-                <input type="password" name="contraseña">
+                <!-- <label for="contraseña">Contraseña</label> -->
+                <input type="password" name="contraseña" placeholder="Contraseña">
             </div>
             <div>
                 <button type="submit">Enviar</button>
