@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
     <link href="/css/normalize.css" rel="stylesheet">
-    <link href="/css/styles.css" rel="stylesheet">
+    <link href="/css/styles-login.css" rel="stylesheet">
 </head>
 <body>
     <header class="cabecera">
@@ -49,14 +49,14 @@
     </header>
     <main>
         <h3>Ingresá a tu cuenta</h3>
-        <form action="/" method="POST" class="ingresar">
+        <form action="/login" method="POST" class="ingresar">
             <div>
                 <!-- <label for="usuario">Nombre de usuario</label> -->
-                <input type="text" name="usuario" placeholder="Nombre de usuario">
+                <input type="text" name="usuario" placeholder="Nombre de usuario" required>
             </div>
             <div>
                 <!-- <label for="contraseña">Contraseña</label> -->
-                <input type="password" name="contraseña" placeholder="Contraseña">
+                <input type="password" name="contraseña" placeholder="Contraseña" required>
             </div>
             <div>
                 <button type="submit">Enviar</button>

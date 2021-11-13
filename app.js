@@ -20,3 +20,14 @@ app.get('/registro', function (req,res){
 app.get('/login', function (req,res){
     res.sendFile(path.resolve(__dirname,'./views/login.html'));
 });
+
+app.post('/registro', function (req,res){
+    res.redirect("/");
+})
+
+app.post('/login', function (req,res){
+    res.redirect("/");
+})
+
+// mensaje de error al llenar mal el formulario
+// centrar login y registro
